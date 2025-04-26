@@ -1,0 +1,88 @@
+/* Estilo general */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header y H1 */
+h1 {
+    color: darkred;
+    text-align: center;
+    text-shadow: 2px 2px #ccc;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background-color: #333;
+    width: 100%;
+    height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/* Pseudo-clase hover en el menú */
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Clase para tamaño de texto */
+.texto-grande {
+    font-size: 20px;
+}
+
+/* Combinación de clase y ID */
+.texto-grande#resumen-parrafo {
+    color: #555;
+    text-align: justify;
+    line-height: 1.6;
+    text-decoration: underline;
+}
+
+/* Selector descendiente */
+.lista-personajes li {
+    font-weight: bold;
+    color: #444;
+}
+
+/* ID para cambiar fuente */
+#titulo-personajes {
+    font-family: 'Georgia', serif;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #dddddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
