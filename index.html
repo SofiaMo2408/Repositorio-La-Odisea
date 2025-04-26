@@ -5,84 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Caída de la Casa Usher</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Bootstrap desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>La Caída de la Casa Usher</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#resumen">Resumen</a></li>
-                <li><a href="#personajes">Personajes</a></li>
-                <li><a href="#analisis">Análisis</a></li>
-                <li><a href="https://es.wikipedia.org/wiki/La_ca%C3%ADda_de_la_casa_Usher" target="_blank">Más Información</a></li>
-            </ul>
-        </nav>
+        <p class="mt-2">Uso de Bootstrap mediante componentes</p> <!-- Mensaje corto -->
     </header>
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p class="texto-grande destacado">Bienvenido a una exploración sobre la obra de Edgar Allan Poe.</p>
-    </section>
+    <!-- Menú de navegación actualizado con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resumen">Resumen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#analisis">Análisis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://es.wikipedia.org/wiki/La_ca%C3%ADda_de_la_casa_Usher" target="_blank">Más Información</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="resumen">
-        <h2>Resumen</h2>
-        <p class="texto-grande parrafo-especial" id="resumen-parrafo">
-            "La caída de la casa Usher" es un relato de terror escrito por Edgar Allan Poe en 1839. Narra la visita de un amigo a la mansión de Roderick Usher, sumergiéndose en una atmósfera de decadencia y horror.
-        </p>
-    </section>
+    <main class="container mt-4">
+        <section id="inicio">
+            <h2 class="text-primary">Inicio</h2>
+            <p class="texto-grande destacado">Bienvenido a una exploración sobre la obra de Edgar Allan Poe.</p>
+        </section>
 
-    <section id="personajes">
-        <h2 id="titulo-personajes">Personajes</h2>
-        <ul class="lista-personajes">
-            <li><strong>Roderick Usher:</strong> Último descendiente de los Usher.</li>
-            <li><strong>Madeline Usher:</strong> Hermana gemela de Roderick.</li>
-            <li><strong>El Narrador:</strong> Amigo que visita la mansión.</li>
-        </ul>
-    </section>
+        <section id="resumen" class="mt-4">
+            <h2 class="text-primary">Resumen</h2>
+            <p class="texto-grande parrafo-especial" id="resumen-parrafo">
+                "La caída de la casa Usher" es un relato de terror escrito por Edgar Allan Poe en 1839. Narra la visita de un amigo a la mansión de Roderick Usher, sumergiéndose en una atmósfera de decadencia y horror.
+            </p>
+        </section>
 
-    <section id="analisis">
-        <h2>Análisis de la Obra</h2>
-        <p>La historia aborda temas como la locura, el terror psicológico y la decadencia familiar.</p>
-    </section>
+        <section id="personajes" class="mt-4">
+            <h2 id="titulo-personajes" class="text-primary">Personajes</h2>
+            <ul class="lista-personajes">
+                <li><strong>Roderick Usher:</strong> Último descendiente de los Usher.</li>
+                <li><strong>Madeline Usher:</strong> Hermana gemela de Roderick.</li>
+                <li><strong>El Narrador:</strong> Amigo que visita la mansión.</li>
+            </ul>
+        </section>
 
-    <section id="tabla">
-        <h2>Datos Relevantes</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Aspecto</th>
-                    <th>Detalle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Autor</td>
-                    <td>Edgar Allan Poe</td>
-                </tr>
-                <tr>
-                    <td>Fecha de Publicación</td>
-                    <td>1839</td>
-                </tr>
-                <tr>
-                    <td>Género</td>
-                    <td>Terror gótico</td>
-                </tr>
-                <tr>
-                    <td>Ubicación</td>
-                    <td>Mansión de los Usher</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section id="analisis" class="mt-4">
+            <h2 class="text-primary">Análisis de la Obra</h2>
+            <p>La historia aborda temas como la locura, el terror psicológico y la decadencia familiar.</p>
+        </section>
 
-    <br></br>
+        <section id="tabla" class="mt-4">
+            <h2 class="text-primary">Datos Relevantes</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Autor</td>
+                        <td>Edgar Allan Poe</td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Publicación</td>
+                        <td>1839</td>
+                    </tr>
+                    <tr>
+                        <td>Género</td>
+                        <td>Terror gótico</td>
+                    </tr>
+                    <tr>
+                        <td>Ubicación</td>
+                        <td>Mansión de los Usher</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
-    <footer>
-        <p>Nombre: Sofía Montoya correa </p>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>Nombre: Sofía Montoya Correa</p>
         <p>Correo: Sofimo2408@gmail.com</p>
-        <p>Institución: Skolmi La odisea</p>
+        <p>Institución: Skolmi La Odisea</p>
         <p>Derechos reservados © 2025. Inspirado en la obra de Edgar Allan Poe.</p>
     </footer>
+
+    <!-- Script de Bootstrap (necesario para el botón de menú en móviles) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
